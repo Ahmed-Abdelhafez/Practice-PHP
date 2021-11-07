@@ -14,20 +14,28 @@
 	
 	<?php  
 
-	/*  Step 1: Use the Make a class called Dog
-
+	/*  
+		Step 1: Use the Make a class called Dog
 		Step 2: Set some properties for Dog, Example, eye colors, nose, or fur color
+		Step 4: Make a method named ShowAll that echos all the properties 
+	*/
+		class Dog {
+			var $eyeColors = "blue";
+			var $nose = "small";
+			var $furColor = "white";
 
-		Step 4: Make a method named ShowAll that echos all the properties
-
-		Step 5: Instantiate the class / create object and call it pitbull
-
-Step 6: Call the method ShowAll
-
+			function showAll() {
+				echo "Eye colors: " . $this -> eyeColors . "<br>" . "Nose: " . $this-> nose . "<br>" . "Fur color: " . $this -> furColor;
+			}
+		}
+	//	Step 5: Instantiate the class / create object and call it pitbull
+		$siberianHusky = new Dog();
+	//Step 6: Call the method ShowAll
+		$siberianHusky->showAll();
 	
 
 		
-	*/
+
 	
 	?>
 
